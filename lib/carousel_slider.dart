@@ -216,6 +216,7 @@ class CarouselSliderState extends State<CarouselSlider>
   Widget getCenterWrapper(Widget child) {
     if (widget.options.disableCenter) {
       return Container(
+        width: 1000.0,
         child: child,
       );
     }
