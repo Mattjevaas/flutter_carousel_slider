@@ -225,7 +225,7 @@ class CarouselSliderState extends State<CarouselSlider>
   Widget getEnlargeWrapper(Widget child,
       {double width, double height, double scale}) {
     if (widget.options.enlargeStrategy == CenterPageEnlargeStrategy.height) {
-      return SizedBox(child: child, width: width, height: height);
+      return Container(child: child, width: width, height: height);
     }
     return Container(child: child, width: width, height: height);
   }
