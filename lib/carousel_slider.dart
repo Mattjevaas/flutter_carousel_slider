@@ -227,9 +227,7 @@ class CarouselSliderState extends State<CarouselSlider>
     if (widget.options.enlargeStrategy == CenterPageEnlargeStrategy.height) {
       return SizedBox(child: child, width: width, height: height);
     }
-    return Transform.scale(
-        scale: scale,
-        child: Container(child: child, width: width, height: height));
+    return Container(child: child, width: width, height: height);
   }
 
   void onStart() {
