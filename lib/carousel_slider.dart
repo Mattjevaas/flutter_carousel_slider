@@ -317,7 +317,9 @@ class CarouselSliderState extends State<CarouselSlider>
 
             if (widget.options.scrollDirection == Axis.horizontal) {
               return getCenterWrapper(getEnlargeWrapper(child,
-                  height: distortionValue * height, scale: distortionValue));
+                  width: distortionValue * MediaQuery.of(context).size.width,
+                  height: distortionValue * height,
+                  scale: distortionValue));
             } else {
               return getCenterWrapper(getEnlargeWrapper(child,
                   width: distortionValue * MediaQuery.of(context).size.width,
